@@ -36,17 +36,19 @@ public class Principal {
         String opcion = "-1";
         while (opcion != "salir") {
             var menu = """
-                ======= Menú Principal =======
+                <<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+                ========= Menú Principal =========
                 1 - Buscar Libro por nombre
                 2 - Mostrar Libros registrados
                 3 - Mostrar autores registrados
                 4 - Mostrar autores vivos por años
                 5 - Mostrar por idiomas
                 0 - Salir
-                =============================
+                ==================================
+                <<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
                 """;
             System.out.println(menu);
-            System.out.print("> ");
+            System.out.print("=> ");
             opcion = teclado.nextLine();
 
             switch (opcion) {
@@ -215,12 +217,12 @@ public class Principal {
     private void mostrarPorIdiomas() {
         System.out.println("""
             Digite el numero del idioma para listar los libros registrados:
-            1: Inglés (en)
-            2: Español (es)
-            3: Francés (fr)
-            4: Alemán (de)
-            5: Italiano (it)
-            6: Otro idioma
+            1 => Inglés (en)
+            2 => Español (es)
+            3 => Francés (fr)
+            4 => Alemán (de)
+            5 => Italiano (it)
+            6 => Otro idioma
             """);
         System.out.print("=> ");
         var opcion = teclado.nextLine();
